@@ -12,7 +12,7 @@
     <mat-card-content>
       <img [src]="getPokemonImage(pokemon.url)" alt="{{ pokemon.name }}">
     </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions class="centered-content">
       <a mat-button [routerLink]="['/pokemon', getIdFromUrl(pokemon.url)]">Ver Detalles</a>
     </mat-card-actions>
   </mat-card>

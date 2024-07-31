@@ -27,7 +27,7 @@ export class PokedexDetailComponent implements OnInit{
   }
 
   getPokemonDetails(id: number) {
-    this.pokeapiService.getPokemon(id).subscribe(data => {
+    this.pokeapiService.getPokemonDetail(id).subscribe(data => {
       this.pokemon = data;
     });
   }
